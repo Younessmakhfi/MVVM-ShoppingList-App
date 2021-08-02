@@ -33,7 +33,7 @@ public final class ShoppingDatabase_Impl extends ShoppingDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `shopping_items` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `item_name` TEXT NOT NULL, `item_amount` INTEGER NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `shopping_items` (`item_name` TEXT NOT NULL, `item_amount` INTEGER NOT NULL, `id` INTEGER PRIMARY KEY AUTOINCREMENT)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
         _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bcbae013dc69684bad761d54a734a7b0')");
       }
@@ -80,9 +80,9 @@ public final class ShoppingDatabase_Impl extends ShoppingDatabase {
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
         final HashMap<String, TableInfo.Column> _columnsShoppingItems = new HashMap<String, TableInfo.Column>(3);
-        _columnsShoppingItems.put("id", new TableInfo.Column("id", "INTEGER", false, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsShoppingItems.put("item_name", new TableInfo.Column("item_name", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsShoppingItems.put("item_amount", new TableInfo.Column("item_amount", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsShoppingItems.put("id", new TableInfo.Column("id", "INTEGER", false, 1, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysShoppingItems = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesShoppingItems = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoShoppingItems = new TableInfo("shopping_items", _columnsShoppingItems, _foreignKeysShoppingItems, _indicesShoppingItems);
@@ -94,7 +94,7 @@ public final class ShoppingDatabase_Impl extends ShoppingDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "bcbae013dc69684bad761d54a734a7b0", "ddad875df0a057056553a310dc82225d");
+    }, "bcbae013dc69684bad761d54a734a7b0", "d257a9a581fecd58e068e29e784f8a16");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

@@ -38,22 +38,22 @@ public final class ShoppingDao_Impl implements ShoppingDao {
     this.__insertionAdapterOfShoppingItem = new EntityInsertionAdapter<ShoppingItem>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `shopping_items` (`id`,`item_name`,`item_amount`) VALUES (?,?,?)";
+        return "INSERT OR REPLACE INTO `shopping_items` (`item_name`,`item_amount`,`id`) VALUES (?,?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, ShoppingItem value) {
-        if (value.getId() == null) {
+        if (value.getName() == null) {
           stmt.bindNull(1);
         } else {
-          stmt.bindLong(1, value.getId());
+          stmt.bindString(1, value.getName());
         }
-        if (value.getName() == null) {
-          stmt.bindNull(2);
+        stmt.bindLong(2, value.getAmount());
+        if (value.getId() == null) {
+          stmt.bindNull(3);
         } else {
-          stmt.bindString(2, value.getName());
+          stmt.bindLong(3, value.getId());
         }
-        stmt.bindLong(3, value.getAmount());
       }
     };
     this.__deletionAdapterOfShoppingItem = new EntityDeletionOrUpdateAdapter<ShoppingItem>(__db) {
@@ -74,7 +74,7 @@ public final class ShoppingDao_Impl implements ShoppingDao {
   }
 
   @Override
-  public Object upsert(final ShoppingItem item, final Continuation<? super Unit> p1) {
+  public Object upsert(final ShoppingItem item, final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -87,11 +87,11 @@ public final class ShoppingDao_Impl implements ShoppingDao {
           __db.endTransaction();
         }
       }
-    }, p1);
+    }, continuation);
   }
 
   @Override
-  public Object delete(final ShoppingItem item, final Continuation<? super Unit> p1) {
+  public Object delete(final ShoppingItem item, final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -104,7 +104,7 @@ public final class ShoppingDao_Impl implements ShoppingDao {
           __db.endTransaction();
         }
       }
-    }, p1);
+    }, continuation);
   }
 
   @Override
@@ -116,9 +116,9 @@ public final class ShoppingDao_Impl implements ShoppingDao {
       public List<ShoppingItem> call() throws Exception {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
-          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
           final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "item_name");
           final int _cursorIndexOfAmount = CursorUtil.getColumnIndexOrThrow(_cursor, "item_amount");
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
           final List<ShoppingItem> _result = new ArrayList<ShoppingItem>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final ShoppingItem _item;

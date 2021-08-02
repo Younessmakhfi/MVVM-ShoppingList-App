@@ -1,0 +1,11 @@
+C:\youcode\Android Apps\MVVMsimpleApp\app\src\main\java\com\example\mvvmsimpleapp\data\db\ShoppingDatabase.kt
+C:\youcode\Android Apps\MVVMsimpleApp\app\src\main\java\com\example\mvvmsimpleapp\ui\shoppinglist\ShoppingActivity.kt
+C:\youcode\Android Apps\MVVMsimpleApp\app\src\main\java\com\example\mvvmsimpleapp\data\db\ShoppingDao.kt
+C:\youcode\Android Apps\MVVMsimpleApp\app\src\main\java\com\example\mvvmsimpleapp\ui\shoppinglist\AddDialogListener.kt
+C:\youcode\Android Apps\MVVMsimpleApp\app\src\main\java\com\example\mvvmsimpleapp\ui\shoppinglist\ShoppingViewModelFactory.kt
+C:\youcode\Android Apps\MVVMsimpleApp\app\src\main\java\com\example\mvvmsimpleapp\data\db\entities\ShoppingItem.kt
+C:\youcode\Android Apps\MVVMsimpleApp\app\src\main\java\com\example\mvvmsimpleapp\data\reporsitories\ShoppingReporsitory.kt
+C:\youcode\Android Apps\MVVMsimpleApp\app\src\main\java\com\example\mvvmsimpleapp\ShoppingApplication.kt
+C:\youcode\Android Apps\MVVMsimpleApp\app\src\main\java\com\example\mvvmsimpleapp\other\ShoppingItemAdapter.kt
+C:\youcode\Android Apps\MVVMsimpleApp\app\src\main\java\com\example\mvvmsimpleapp\ui\shoppinglist\ShoppingViewModel.kt
+C:\youcode\Android Apps\MVVMsimpleApp\app\src\main\java\com\example\mvvmsimpleapp\ui\shoppinglist\AddShoppingItemDialog.kt
