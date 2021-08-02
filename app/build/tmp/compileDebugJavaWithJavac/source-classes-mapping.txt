@@ -1,0 +1,32 @@
+com/example/mvvmsimpleapp/databinding/DialogAddShoppingItemBinding.java
+ com.example.mvvmsimpleapp.databinding.DialogAddShoppingItemBinding
+com/example/mvvmsimpleapp/BR.java
+ com.example.mvvmsimpleapp.BR
+com/example/mvvmsimpleapp/databinding/ActivityShoppingBinding.java
+ com.example.mvvmsimpleapp.databinding.ActivityShoppingBinding
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+com/example/mvvmsimpleapp/data/db/ShoppingDao_Impl.java
+ com.example.mvvmsimpleapp.data.db.ShoppingDao_Impl
+ com.example.mvvmsimpleapp.data.db.ShoppingDao_Impl$1
+ com.example.mvvmsimpleapp.data.db.ShoppingDao_Impl$2
+ com.example.mvvmsimpleapp.data.db.ShoppingDao_Impl$3
+ com.example.mvvmsimpleapp.data.db.ShoppingDao_Impl$4
+ com.example.mvvmsimpleapp.data.db.ShoppingDao_Impl$5
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/example/mvvmsimpleapp/DataBinderMapperImpl.java
+ com.example.mvvmsimpleapp.DataBinderMapperImpl
+ com.example.mvvmsimpleapp.DataBinderMapperImpl$InnerBrLookup
+ com.example.mvvmsimpleapp.DataBinderMapperImpl$InnerLayoutIdLookup
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/example/mvvmsimpleapp/databinding/ShoppingItemBinding.java
+ com.example.mvvmsimpleapp.databinding.ShoppingItemBinding
+com/example/mvvmsimpleapp/BuildConfig.java
+ com.example.mvvmsimpleapp.BuildConfig
+com/example/mvvmsimpleapp/DataBindingTriggerClass.java
+ com.example.mvvmsimpleapp.DataBindingTriggerClass
+com/example/mvvmsimpleapp/data/db/ShoppingDatabase_Impl.java
+ com.example.mvvmsimpleapp.data.db.ShoppingDatabase_Impl
+ com.example.mvvmsimpleapp.data.db.ShoppingDatabase_Impl$1

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\youcode\\Android Apps\\MVVMsimpleApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_add_shopping_item.xml",
+        "source": "C:\\youcode\\Android Apps\\MVVMsimpleApp\\app\\src\\main\\res\\layout\\dialog_add_shopping_item.xml"
+    },
+    {
+        "merged": "C:\\youcode\\Android Apps\\MVVMsimpleApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\shopping_item.xml",
+        "source": "C:\\youcode\\Android Apps\\MVVMsimpleApp\\app\\src\\main\\res\\layout\\shopping_item.xml"
+    },
+    {
+        "merged": "C:\\youcode\\Android Apps\\MVVMsimpleApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_shopping.xml",
+        "source": "C:\\youcode\\Android Apps\\MVVMsimpleApp\\app\\src\\main\\res\\layout\\activity_shopping.xml"
+    },
+    {
+        "merged": "C:\\youcode\\Android Apps\\MVVMsimpleApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\youcode\\Android Apps\\MVVMsimpleApp\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\youcode\\Android Apps\\MVVMsimpleApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_news.xml",
+        "source": "C:\\youcode\\Android Apps\\MVVMsimpleApp\\app\\src\\main\\res\\layout\\activity_news.xml"
+    },
+    {
+        "merged": "C:\\youcode\\Android Apps\\MVVMsimpleApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_signup.xml",
+        "source": "C:\\youcode\\Android Apps\\MVVMsimpleApp\\app\\src\\main\\res\\layout\\activity_signup.xml"
+    }
+]
